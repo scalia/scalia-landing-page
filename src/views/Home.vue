@@ -9,7 +9,7 @@
       Connect
     </Button>
     <div class="title">
-      <p>Scalia is now part of</p>
+      <p class="text-black">Scalia is now part of</p>
       <p><img src="../assets/veepee.png" alt="veepee" class="img-veepee"></p>
     </div>
     <div class="buttons">
@@ -39,6 +39,10 @@ export default {
 <style lang="scss" scoped>
   .home {
     text-align: center;
+  }
+
+  .text-black {
+    color: black;
   }
 
   .background {
@@ -85,8 +89,8 @@ export default {
 
   .button-style {
     border-color: #ed0f92;
-    border-width: medium;
     color: #ed0f92;
     height: auto;
+    border: 1px solid;
   }
 </style>
