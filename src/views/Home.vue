@@ -1,18 +1,92 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img src="../assets/veepee-scalia.jpg" alt="veepee-scalia" class="background">
+    <Button
+      class="connect button-style"
+      shape="circle"
+      target="_blank"
+      to="https://scalia-vue-production.com">
+      Connect
+    </Button>
+    <div class="title">
+      <p>Scalia is now part of</p>
+      <p><img src="../assets/veepee.png" alt="veepee" class="img-veepee"></p>
+    </div>
+    <div class="buttons">
+      <Button
+        class="story button-style big-button"
+        shape="circle"
+        to="/story">
+        Our story
+      </Button>
+      <Button
+        class="blog button-style big-button"
+        shape="circle"
+        target="_blank"
+        to="https://medium.com/scalia">
+        Our blog
+      </Button>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
 };
 </script>
+
+<style lang="scss" scoped>
+  .home {
+    text-align: center;
+  }
+
+  .background {
+    width:100%;
+    opacity: 0.5;
+  }
+
+  .img-veepee {
+    width:50%;
+  }
+
+  .title {
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .connect {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    padding: 0px 30px;
+    font-size: 17px;
+  }
+
+  .buttons {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .blog {
+    margin-left: 60px;
+  }
+
+  .big-button {
+    padding: 10px 40px;
+    font-size: 24px;
+  }
+
+  .button-style {
+    border-color: #ed0f92;
+    border-width: medium;
+    color: #ed0f92;
+    height: auto;
+  }
+</style>
